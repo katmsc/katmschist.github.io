@@ -121,6 +121,7 @@ h2 {
 }
 
 .test__text {
+	margin: 0;
     padding: 120px;
     font-size: 45px;
     color: #fff;
@@ -147,11 +148,16 @@ h2 {
 .tables-and-cards-collections {
 	display: flex;
     justify-content: space-between;
+    text-align: center;
     list-style: none;
 }
 
+.tables-and-cards-collections-item {
+	background-color: #e4d8d159;
+}
+
 .tables-and-cards-collections-item__title {
-	font: normal 15px/1.334 "Formular", sans-serif;
+	font: bold 15px/1.334 "Formular", sans-serif;
 	color: #1a1a1a;
     font-size: 20px;
 }
@@ -196,6 +202,8 @@ h2 {
 }
 
 .footer {
+	display: flex;
+	flex-wrap: wrap;
 	color: #fff;
     background-color: #1f242d;
 }
@@ -212,4 +220,20 @@ h2 {
     padding: 50px 0 50px 220px;
     text-align: left;
 }
+
+.footer-chat {
+	padding-left: 220px;
+}
+
+.footer-chat-blok__img {
+	width: 150px;
+    height: auto;
+}
+
+.footer-contacts {
+	padding: 88px 0 0 220px;
+}
+
+
+
 
