@@ -1,16 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font: normal 17px/26px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
-
-    font-size: 14px;
-    line-height: 1.5;
-    color: #fff;
-}
-
-h1, h2, h3 {
-    text-align: center;
-    text-transform: uppercase;
+	font: normal 17px/26px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif; 
 }
 
 h2 {
@@ -21,46 +12,55 @@ h2 {
     font-weight: 600;
     margin-bottom: 30px;
     outline: 0;
-}
-
-a {
-	text-decoration: none;
-
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /*первая секция*/
 
 .top-section {
-	display: flex;
-    flex-direction: column;
 	height: 100vh;
 	background: url('../img/horizontally/main.jpg') no-repeat center top / cover;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
 }
 
 .top-section-header {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
+    flex-direction: column;    
 }
 
 .top-section-header__title {
 	margin: 0;
 	font-size: 72px;
-	letter-spacing: 0.3em;
 }
 
 .top-section-header__description {
 	font-size: 24px;
-	letter-spacing: 0.3em;
 }
 
-.top-section-menu, 
+.top-section-menu {
+	line-height: 4;
+	list-style-type: none;
+}
+
+.top-section-menu-item:hover {
+    background: #412C84;
+    color: #fff;
+    box-shadow: 12px 12px 65px rgba(0,1,197,0.45);
+}
+
 .top-section-tags {
-	display: flex;
-	justify-content: center;
+	line-height: 4;
 	list-style-type: none; 
-	text-transform: uppercase;
+}
+
+.top-section-tags-item:hover {
+    background: #412C84;
+    color: #fff;
+    box-shadow: 12px 12px 65px rgba(0,1,197,0.45);
 }
 
 .top-section-menu-item__link,
@@ -69,25 +69,7 @@ a {
 	color: #fff;
 	text-decoration: none;
 	letter-spacing: 0.3em;
-	padding-right: 10px; 
 }
-
-.top-section-menu {
-	display: block;
-    line-height: 4;
-} 
-
-.top-section-tags {
-	display: block;
-	margin-left: auto;
-    line-height: 4;  
-}
-
-/*
-.top-section-rubrics {
-	padding-left: 0;
-	list-style-type: none; 
-}*/
 
 .top-section-rubrics__link {
 	font-size: 18px;
@@ -98,42 +80,25 @@ a {
 
 /*вторая секция "Лучшие Публикации"*/
 
-.publications {
-	margin: 100px 0 150px;
-	color: #1a1a1a;
-}
-
 .publications__title {
 	margin: 0;
     padding: 100px;
     font-size: 25px;
-	text-transform: uppercase;
-	text-align: center;
     letter-spacing: 0.2em;
 }
 
 .publications-collections {
 	display: flex;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    padding: 0;
+    text-align: center;
     list-style-type: none;
 }
 
-.publications-collections-item {
-	text-align: center;
-}
-
 .publications-collections-item__lead {
-    padding-bottom: 120px;
-    font: normal 17px/26px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
-	color: #262626;
     font-size: 25px;
-    text-align: center;
     line-height: 35px;
-    margin-bottom: 40px;
-    width: 660px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 
 .publications-collections-item-img {
@@ -153,13 +118,9 @@ a {
 .test {
 	background: url(../img/horizontally/books.jpg) no-repeat center top / cover;
 	text-align: center;
-    font-size: 24px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
 }
 
 .test__text {
-	margin: 0;
     padding: 120px;
     font-size: 45px;
     color: #fff;
@@ -224,7 +185,9 @@ a {
 
 .doors-list {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
+	list-style-type: none;
 }
 
 .doors-list-item__img {
