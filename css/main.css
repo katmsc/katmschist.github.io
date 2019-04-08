@@ -16,6 +16,12 @@ h2 {
     text-transform: uppercase;
 }
 
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
 /*первая секция*/
 
 .top-section {
@@ -213,29 +219,29 @@ h2 {
     background-color: #1f242d;
 }
 
-.footer-text {
+.footer__text {
 	margin: 0;
     padding: 50px 0 50px 220px;
     text-align: left;
 }
 
-.footer-menu {
+.footer__menu {
 	list-style: none;
 	margin: 0;
     padding: 50px 0 50px 220px;
     text-align: left;
 }
 
-.footer-chat {
+.footer__chat {
 	padding-left: 220px;
 }
 
-.footer-chat-blok__img {
+.footer__chat__img {
 	width: 150px;
     height: auto;
 }
 
-.footer-contacts {
+.footer__contacts {
 	padding: 88px 0 0 220px;
 }
 
