@@ -171,17 +171,17 @@ ul, li {
 
 /*четвертая секция "Тесты/Карточки"*/
 
-.tables-and-cards {
+.cards {
 	max-width: 1500px;
     margin: 0 auto;
 }
 
-.tables-and-cards-collections {
+.cards-collections {
 	margin: 100px 0 150px;
 	color: #1a1a1a;
 }
 
-.tables-and-cards__title {
+.cards__title {
 	margin: 0;
     padding: 100px;
     font-size: 25px;
@@ -189,7 +189,7 @@ ul, li {
     letter-spacing: 0.2em;	
 }
 
-.tables-and-cards-collections {
+.cards-collections {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -197,22 +197,22 @@ ul, li {
     list-style: none;
 }
 
-.tables-and-cards-collections-item {
+.cards-collections-item {
 	margin: 30px;
 	background-color: #e4d8d159;
 }
 
-.tables-and-cards-collections-item__title {
+.cards-collections-item__title {
 	font: bold 15px/1.334 "Formular", sans-serif;
 	color: #1a1a1a;
     font-size: 20px;
 }
 
-.tables-and-cards-collections-item__title__link {
+.cards-collections-item__title__link {
 	text-decoration: none;
 }
 
-.tables-and-cards-collections-item__lead {
+.cards-collections-item__lead {
 	font: normal 17px/26px "Lava 3", serif, Arial, Helvetica, Geneva, sans-serif;
 	color: #262626;
     font-size: 25px;
@@ -242,9 +242,10 @@ ul, li {
 
 .doors-list {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evently;
-	list-style-type: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    list-style: none;
 }
 
 .doors-list-item {
